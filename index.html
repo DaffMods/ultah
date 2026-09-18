@@ -1,0 +1,304 @@
+<!-- CREATED BY DAXXZXPLOIT -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="stars"></div>
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="assets/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn" aria-label="Putar musik">
+        <span id="musicIcon">♫</span>
+    </button>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+
+            <h1>
+                Happy
+                <span>Birthday</span>
+            </h1>
+
+            <div class="cake">🎂</div>
+
+            <h2 id="name">Aura Anandhiva</h2>
+
+            <p class="hero-text">
+                Selamat Ulang Tahun Ya My Love, Semoga Yang Bertambah Dewasa Bukan
+                Cuma Usia Kamu, Tapi Sifat Kamu, Prilaku Kamu, Ucapan Kamu, Dan Semua Tentang
+                Kamu Berubah Lebih Baik Lagi.
+                Kalau Kamu Butuh Sesuatu Kabarin Aku Aja Ya Baby, I'am Always Here
+                For You. Love You Sayang ❤️
+            </p>
+
+            <button class="scroll-btn" onclick="scrollToMessage()">
+                Buka ucapan ↓
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO -->
+    <section class="photo-section">
+
+        <div class="section-label">A LITTLE MEMORY</div>
+
+        <div class="photo-card">
+
+            <div class="photo-frame">
+                <img src="assets/foto.jpg" alt="Foto ulang tahun">
+            </div>
+
+            <div class="photo-decoration">♡</div>
+
+        </div>
+
+        <p class="photo-caption">
+            "Satu foto, seribu cerita."
+        </p>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+    <section class="message-section" id="message">
+
+        <div class="message-card">
+
+            <div class="envelope">💌</div>
+
+            <p class="section-label">A LETTER FOR YOU</p>
+
+            <h2>
+                Untuk <span id="name2">Aura Anandhiva</span>
+            </h2>
+
+            <div class="message">
+
+                <p>
+                    Selamat ulang tahun sayang! 🎉
+                </p>
+
+                <p>
+                    Selamat Ulang Tahun Ya My Love, Semoga Yang Bertambah Dewasa Bukan
+                Cuma Usia Kamu, Tapi Sifat Kamu, Prilaku Kamu, Ucapan Kamu, Dan Semua Tentang
+                Kamu Berubah Lebih Baik Lagi.
+                Kalau Kamu Butuh Sesuatu Kabarin Aku Aja Ya Baby, I'am Always Here
+                For You. Love You Sayang ❤️
+                </p>
+
+                <p>
+                    Jangan pernah takut untuk bermimpi besar.
+                    Mungkin tidak semuanya akan berjalan sesuai
+                    rencana, tapi percayalah bahwa setiap langkah
+                    kecil tetap berarti.
+                </p>
+
+                <p>
+                    Terima kasih sudah menjadi seseorang yang
+                    begitu berarti. Semoga senyum kamu selalu
+                    punya alasan untuk tetap ada. ❤️
+                </p>
+
+                <p class="closing">
+                    Sekali lagi...
+                </p>
+
+                <h3>Happy Birthday! 🎂✨</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WISH -->
+    <section class="wish-section">
+
+        <div class="wish-content">
+
+            <div class="gift" id="gift" onclick="openGift()">
+                🎁
+            </div>
+
+            <h2>Make a Wish ✨</h2>
+
+            <p id="wishText">
+                Ada satu kejutan kecil untukmu...
+            </p>
+
+            <button onclick="openGift()" class="wish-btn">
+                Buka hadiahnya
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final-section">
+
+        <div class="final-content">
+
+            <div class="heart">♥</div>
+
+            <h2>
+                Semoga hari ini
+                <span>seindah senyummu.</span>
+            </h2>
+
+            <p>
+                Dadah Sayang
+            </p>
+
+            <div class="signature">
+                With love, ♡
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFETTI -->
+    <div id="confetti-container"></div>
+
+<!-- ================================
+     FLOWER SURPRISE
+================================= -->
+
+<div id="flowerSurprise" class="flower-surprise">
+
+    <div class="flower-bg"></div>
+
+    <!-- Sparkles -->
+    <div class="sparkles"></div>
+
+    <!-- Falling petals -->
+    <div id="petals"></div>
+
+    <div class="flower-content">
+
+        <div class="surprise-title">
+            <span>✨</span>
+            <p>SEBUAH KEJUTAN UNTUKMU</p>
+            <span>✨</span>
+        </div>
+
+        <h1>
+            Selamat Ulang Tahun
+            <span>🌸</span>
+        </h1>
+
+        <p class="surprise-name">
+            Untuk <strong id="surpriseName">Nama Kamu</strong> ❤️
+        </p>
+
+        <!-- BOUQUET -->
+        <div class="bouquet">
+
+            <div class="glow"></div>
+
+            <!-- Stems -->
+            <div class="stem stem-1"></div>
+            <div class="stem stem-2"></div>
+            <div class="stem stem-3"></div>
+            <div class="stem stem-4"></div>
+            <div class="stem stem-5"></div>
+
+            <!-- Leaves -->
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+            <div class="leaf leaf-4"></div>
+
+            <!-- Flowers -->
+            <div class="flower flower-1">
+                <span></span>
+            </div>
+
+            <div class="flower flower-2">
+                <span></span>
+            </div>
+
+            <div class="flower flower-3">
+                <span></span>
+            </div>
+
+            <div class="flower flower-4">
+                <span></span>
+            </div>
+
+            <div class="flower flower-5">
+                <span></span>
+            </div>
+
+            <div class="flower flower-6">
+                <span></span>
+            </div>
+
+            <!-- Small flowers -->
+            <div class="small-flower sf-1">✿</div>
+            <div class="small-flower sf-2">✿</div>
+            <div class="small-flower sf-3">✿</div>
+            <div class="small-flower sf-4">✿</div>
+
+        </div>
+
+        <div class="surprise-message">
+
+            <p>
+                Semoga semua doa baik yang kamu punya
+                satu per satu menjadi kenyataan.
+            </p>
+
+            <span>
+                Tetap tersenyum, tetap bersinar,
+                dan terus jadi seseorang yang luar biasa. ✨
+            </span>
+
+        </div>
+
+        <button class="close-surprise" onclick="closeGift()">
+            Tutup kejutan ✕
+        </button>
+
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
