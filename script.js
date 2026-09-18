@@ -14,8 +14,8 @@ const music = document.getElementById("music");
 const musicBtn = document.getElementById("musicBtn");
 const musicIcon = document.getElementById("musicIcon");
 
-const nameElement = document.getElementById("name");
-const nameElement2 = document.getElementById("name2");
+const nameElement = document.getElementById("Aura Anandhiva");
+const nameElement2 = document.getElementById("Aura Anandhiva");
 
 const wishText = document.getElementById("wishText");
 
